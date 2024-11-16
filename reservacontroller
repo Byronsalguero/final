@@ -1,0 +1,35 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+@RestController
+@RequestMapping("/api/reservas")
+public class ReservaController {
+
+    @Autowired
+    private ReservaService reservaService;
+
+    @PostMapping
+    public Reserva crearReserva(@RequestBody Reserva reserva) {
+        return reservaService.crearReserva(reserva);
+    }
+
+    @GetMapping
+    public List<Reserva> listarReservas() {
+        return reservaService.listarReservas();
+    }
+
+    @PutMapping("/{id}")
+    public Optional<Reserva> actualizarFechas(@PathVariable Long id, 
+                                              @RequestParam LocalDate nuevaFechaInicio, 
+                                              @RequestParam LocalDate nuevaFechaFin) {
+        return reservaService.actualizarFechas(id, nuevaFechaInicio, nuevaFechaFin);
+    }
+
+    @DeleteMapping("/{id}")
+    public void cancelarReserva(@PathVariable Long id) {
+        reservaService.cancelarReserva(id);
+    }
+}
