@@ -12,4 +12,25 @@ primero que nada se agragan las dependencias  son el sprin inicializer
 
 
 
+![image](https://github.com/user-attachments/assets/cbc4c4f2-9a32-4682-84c6-246f8f60c6f2)
+
+
+
+![image](https://github.com/user-attachments/assets/8869c7f6-e6af-48e8-92fa-9f4d3669efbd)
+
+
+![image](https://github.com/user-attachments/assets/b325e266-0d92-40a7-92aa-c6d0bf1d5eeb)
+
+el pom xml:
+
+![image](https://github.com/user-attachments/assets/e280e5dc-2c09-4082-b881-3cdb51682aef)
+
+
+![image](https://github.com/user-attachments/assets/f9f0dc76-f649-4ee3-a517-aa49f95feb7a)
+
+
+
+
+
+
 
